@@ -10,11 +10,15 @@ function switchStyle() {
     // Informationen i elementen med ID "stylesheet1" och "stylesheet2" sparas i varsin variabel.
     var style1 = document.getElementById("stylesheet1");
     var style2 = document.getElementById("stylesheet2");
+    var style1sm = document.getElementById("stylesheet1_small");
+    var style2sm = document.getElementById("stylesheet2_small");
     
     // När man klickar (onclick) på elementen tillgörande "style1" eller "style2" skickas respektive sökväg till
     // olika css-filer som ett argument (sheet) till fuktionen "swapStyleSheet".
     style1.onclick = function () { setHref("/_css/style.css") };
     style2.onclick = function () { setHref("/_css/styleLight.css"); };
+    style1sm.onclick = function () { setHref("/_css/style.css") };
+    style2sm.onclick = function () { setHref("/_css/styleLight.css"); };
 
 }
 
