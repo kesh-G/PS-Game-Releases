@@ -1,0 +1,281 @@
+/* TOC:
+
+    1. Box Model
+    2. Typography & Base
+    3. Header & Nav
+    4. Landing page
+    5. Footer
+    6. Clearfix
+
+*/
+
+
+/*---- 1. Box Model ----*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/*---- 2. Typography & Base ----*/
+
+body {
+    background-color: #b6cfdd;
+}
+
+.wrapper {
+    background-color: rgb(236, 236, 236);
+    width: 1438px;
+    margin: 0 auto;
+    border-left: 3px solid rgb(163, 163, 163);
+    border-right: 3px solid rgb(163, 163, 163);
+    box-shadow: 0.1em 0.1em 1em rgb(151, 151, 151); /* Lägger till en skugga på var sida om wrappern. */
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #666;
+    padding: 0.5em 0 0.5em 0;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    color: #4f4f71;
+}
+
+h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    color: #4f4f71;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+
+
+/*---- 3. Header & nav ----*/
+
+header {
+    background-image: url(../images/PSheader_light.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #a091b8;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 500px;
+}
+
+.logoText {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.logoText h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 6.5em;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #333;
+    padding: 0.1em;
+}
+
+.logoText h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6em;
+    color: #ccc;
+}
+
+nav {
+    margin-top: 84px;
+    display: block;
+    text-align: center;
+    background: rgba(218, 254, 255, 0.555);
+}
+
+.dropbtn {
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3em;
+    color: #000;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px;
+    min-width: 160px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+}
+
+.dropdown-content a:hover {
+    background-color:  rgb(159, 230, 233);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#controllerIMG {
+    width: 150px;
+    display: block;
+    margin: 40px auto auto auto;
+}
+
+
+
+/*---- 4. Landing page ----*/
+
+.card {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .05);
+}
+
+.cardIMG {
+    width: 30%;
+    object-fit: contain;
+}
+
+.cardTextBlock {
+    width: 70%;
+    padding: 0 20px 0 40px;
+}
+
+.cardHeading {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.cardDate {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(0, 123, 128);
+    margin-bottom: 20px;
+}
+
+.cardText {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.monthHeading {
+    font-family: 'Exo', sans-serif;
+    font-size: 2.5em;
+    margin: 80px 0 0 150px;
+    color: rgb(0, 123, 128);
+}
+
+
+
+/*---- 5. Footer ----*/
+
+footer {
+    background-color: #b6b6b6;
+    width: 100%;
+    height: 170px;
+    margin-top: 100px;
+}
+
+footer ul {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    color: #444;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+
+/*---- 6. Clearfix ----*/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

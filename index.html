@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PS Releases</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="_css/reset.css" type="text/css">
+    <link rel="stylesheet" href="_css/style.css" type="text/css" id="pagestyle">    
+</head>
+
+<body>
+<div id="wrapper">
+
+    <header role="banner">   
+        <div class="logoText">
+            <h1 tabindex="0"> PS Releases</h1>
+            <h2>Your guide to the best upcoming PlayStation games</h2>
+        </div>
+
+        <img src="images/controller.png" alt="PlayStation controller" id="controllerIMG"/>
+
+        <!-- Menyn på desktop -->
+        <nav id="bigscrNav" role="Desktop navigation">
+            <div class="dropdown">
+                <button class="dropbtn" tabindex="0">Month</button>
+                <div class="dropdown-content" tabindex="2">
+                    <a href="#Jan" tabindex="1">January</a>
+                    <a href="#Feb" tabindex="2">February</a>
+                    <a href="#Mar" tabindex="3">March</a>
+                    <a href="#Jun" tabindex="4">June</a>
+                    <a href="#TBC" tabindex="5">TBC</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Style</button>
+                <div class="dropdown-content">
+                    <!-- Varje har ett "onclick"-event som anropar funktionen "switchStyle" i JavaScript-filen. -->
+                    <a id="stylesheet1" onclick="switchStyle();">Dark (default)</a>
+                    <a id="stylesheet2" onclick="switchStyle();">Light</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menyn på mobiler (max bredd: 480px) -->
+        <nav id="smallerNav" role="Small screen navigation">
+            <div class="smallerNav_containter">
+                <div class="smallerNavbar"></div>
+                <div id="smallerNav_links">
+                    <p>Month</p>
+                    <a href="#Jan" tabindex="1">January</a>
+                    <a href="#Feb" tabindex="2">February</a>
+                    <a href="#Mar" tabindex="3">March</a>
+                    <a href="#Jun" tabindex="4">June</a>
+                    <a href="#TBC" tabindex="5">TBC</a>
+
+                    <p>Style</p>
+                    <a id="stylesheet1" onclick="switchStyle();">Dark (default)</a>
+                    <a id="stylesheet2" onclick="switchStyle();">Light</a>
+                </div>
+
+                <!-- Hamburgermeny-ikonen som anrpoar en funktion i JS på små smärmar. -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleSmallMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="dateBox">
+            <p class="dateBox_heading">Today is</p>
+            <p class="dateBox_date"><span id="dateMonth"></span><span id="dateDay"></span></p>
+        </div>
+        <h1 class="monthHeading" id="Jan">January</h1>
+        <div class="card">
+            <img src="images/ScottPilgrim.jpg" class="cardIMG" alt="Image of Scott Pilgrim vs. The World: The Game Complete Edition (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Scott Pilgrim vs. The World: The Game Complete Edition (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    January 14th
+                </h3>
+                <p class="cardText">
+                    Play as your favorite characters – Scott Pilgrim, Ramona Flowers, Knives Chau, Stephen Stills, and more. Level up and learn new awesome abilities, unlock secret items and modes, summon powerful allies, and more! Team up with friends and combine your skills to battle your way through waves of tough enemies, or compete with them in awesome mini-games like Dodgeball, all on your way to defeat the League of Ramona's Evil Exes!
+                </p>
+            </div>
+        </div><!-- END Card -->
+        
+        <div class="card">
+            <img src="images/Hitman3.jpg" class="cardIMG" alt="Image of Hitman 3 (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Hitman 3 (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    January 20th
+                </h3>
+                <p class="cardText">
+                    Described as a "dramatic conclusion to the World of Assassination trilogy", Hitman 3 brings more stealthy action to players as Agent 47 takes on what is said to be one of the most important contracts of his career. Oooh. Sounds like Agent 47 is going to have to use all of his tricks for this one. Taking place around the globe, some locations have been revealed such as Dubai, and you'll also be able to import all of the locations from Hitman 1 and Hitman 2. 
+                </p>
+            </div>
+        </div><!-- END Card -->
+        
+        <h1 class="monthHeading" id="Feb">February</h1>
+        <div class="card">
+            <img src="images/LittleNightmares.jpg" class="cardIMG" alt="Image of Little Nightmares 2 (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Little Nightmares 2 (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    February 11th
+                </h3>
+                <p class="cardText">
+                    Our tiny yellow raincoat-wearing heroine, Six, has escaped the horrors of the ship only to find herself in an unknown land facing similar, pretty awful nightmares. It looks like she's found a friend for Little Nightmares 2 though. You actually play as this new character, Mono, a young boy trapped in a world distorted by the humming transmission of a distant tower, and Six is his guide to discover the Signal Tower's dark secrets. But can he discover them before Six fades from this world altogether?
+                </p>
+            </div>
+        </div><!-- END Card -->
+
+        
+        <h1 class="monthHeading" id="Mar">March</h1>
+        <div class="card">
+            <img src="images/Princeofpersia.jpg" class="cardIMG" alt="Image of Prince of Persia: Sands of Time Remake (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Prince of Persia: Sands of Time Remake (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    March 18th
+                </h3>
+                <p class="cardText">
+                    The Prince of Persia: Sands of Time Remake will bring the 2003 adventure back for a new generation, with a host of enhancements and new features for modern consoles. Players will be able to fight against new enemy character models, see entirely new cinematic sequences, and experience the action with enhanced animations. Camera and combat controls have also been rebuilt and modernized to suit current consoles.
+                </p>
+            </div>
+        </div><!-- END Card -->
+
+        <h1 class="monthHeading" id="Jun">June</h1>
+        <div class="card">
+            <img src="images/Back4Blood.jpg" class="cardIMG" alt="Image of Back4Blood (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Back4Blood (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    June 22nd
+                </h3>
+                <p class="cardText">
+                    Back 4 Blood is a thrilling cooperative first-person shooter from the creators of the critically acclaimed Left 4 Dead franchise. You are at the center of a war against the Ridden. These once-human hosts of a deadly parasite have turned into terrifying creatures bent on devouring what remains of civilization. With humanity’s extinction on the line, it’s up to you and your friends to take the fight to the enemy, eradicate the Ridden, and reclaim the world.
+                </p>
+            </div>
+        </div><!-- END Card -->
+
+        <h1 class="monthHeading" id="TBC">TBC (To be confirmed)</h1>
+        <div class="card">
+            <img src="images/WhereHeart.jpg" class="cardIMG" alt="Image of Where the Heart Is (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Where the Heart Is (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    TBC 2021
+                </h3>
+                <p class="cardText">
+                    Armature Studio is bringing us a narrative adventure that blends imagination with reality as you explore the protagonist Whit's past and future. From his childhood to adult life and beyond, every choice you make will influence where Whit's path will lead, with many different endings to discover. From surreal to emotional moments and everything in between, Where The Heart Is takes you on a story-driven journey that explores familial ties.
+                </p>
+            </div>
+        </div><!-- END Card -->
+
+        <div class="card">
+            <img src="images/FarCry.jpg" class="cardIMG" alt="Image of Far Cry 6 (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Far Cry 6 (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    TBC 2021
+                </h3>
+                <p class="cardText">
+                    The return of the Far Cry series will see you take on the role of Dani Rojas, a Yaran who fights with a guerilla group to free the island from the rule of Anton Castillo (voiced by Giancarlo Esposito), who rules a ruthless dictatorship. Castillo is set on restoring the island to its former glory "by any means" with his son Diego at his side. 
+                </p>
+            </div>
+        </div><!-- END Card -->
+
+        <div class="card">
+            <img src="images/Horizon.jpg" class="cardIMG"alt="Image of Horizon Forbidden West (PS4, PS5)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Horizon Forbidden West (PS4, PS5)
+                </h2>
+                <h3 class="cardDate">
+                    TBC 2021
+                </h3>
+                <p class="cardText">
+                    As the sequel to Guerrilla Games' fantastic robotic, post-apocalyptic adventure, it's inherently exciting. Our hero Aloy is back and she's heading to the realms of San Francisco and co in the west of America, facing a new threat - and some old foes. Expect new robots, some familiar faces, and some seriously gorgeous graphics as this game launches across PS5 and PS4.
+                </p>
+            </div>
+        </div><!-- END Card -->
+
+        <div class="card">
+            <img src="images/VampireMasq.jpg" class="cardIMG"alt="Image of Vampire: The Masquerade - Bloodlines 2 (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Vampire: The Masquerade - Bloodlines 2 (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    TBC 2021
+                </h3>
+                <p class="cardText">
+                    Vampire: The Masquerade - Bloodlines 2 sees you play as a vampire who was sired as an act of vampire terrorism during the 'Mass Embrace.'  Thrown into the seedy underbelly of Seattle where creatures roam the rainy city, you'll get caught up the politics of the different vampire factions as you try to grapple with your new abilities and a new way of life. Just like the first game, there will be a whole host of different vampire clans with different abilities and social standings.
+                </p>
+            </div>
+        </div><!-- END Card -->
+
+        <div class="card">
+            <img src="images/FIST.jpg" class="cardIMG"alt="Image of F.I.S.T Forged in Shadow Torch (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    F.I.S.T Forged in Shadow Torch (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    TBC 2021
+                </h3>
+                <p class="cardText">
+                    Described as an exploration platformer, F.I.S.T Forged in Shadow Torch sees you play as Rayton, an anthropomorphic bunny who wields a massive, weaponized metal fist. In this "dieselpunk-style action-adventure" set in a world that's only inhabited by animals, things take a turn for the worse when the world is invaded by machine-like creatures. As a veteran who's seen many battles and has been in hiding since his city fell to conflict, you set out as Rayton in a bid to rescue a friend who's been kidnapped by the Machine Legion.
+                </p>
+            </div>
+        </div><!-- END Card -->
+
+        <div class="card">
+            <img src="images/DyingLight.jpg" class="cardIMG"alt="Image of Dying Light 2 (PS4)"/>
+            <div class="cardTextBlock">
+                <h2 class="cardHeading">
+                    Dying Light 2 (PS4)
+                </h2>
+                <h3 class="cardDate">
+                    TBC 2021
+                </h3>
+                <p class="cardText">
+                    Dying Light came out back in 2015, and since then many have been hoping for a sequel, so when news hit that Dying Light 2 was in fact happening, the excitement for another zombie fest from Techland was palpable. The second game takes place 15 years after the first, and one human settlement still stands in the 'modern dark age' the infected world has fallen into. There are more RPG elements on offer this time around, with difficult choices and sacrifices to make to help or hinder the world.
+                </p>
+            </div>
+        </div><!-- END Card -->
+    </main>
+
+    <footer>
+        <ul>
+            <li>© Game Nerds 2021</li>
+        </ul>
+    </footer>
+    
+</div><!-- END Wrapper -->
+</body>
+</html>
+
+<!-- JavaScript-filen länkas in längst ner i dokumentet eftersom den måste laddas in
+innan HTML-sidan, browsern avkodar från botten.. -->
+<script type="text/javascript" src="_JS/script.js"></script> 
